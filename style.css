@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type:none;
+}
+nav{
+    background-color: rgb(16, 138, 97);
+    color: white;
+    height: 72px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+.gamecontainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+   background-color: rgb(241, 235, 241);
+}
+.gameinfo{
+    padding: 0 34px;
+    font-style: italic;
+}
+.gameinfo h1{
+    font-size: 1.5rem;
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 23px;
+    padding: 6px 14px;
+    border-radius: 9px;
+    cursor: pointer;
+    padding-left:18px; 
+    padding-right: 18px;
+    font-size: 15px;
+}
+@media screen and (max-width: 800px) 
+{
+    .gameContainer{
+            flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+    
+}
